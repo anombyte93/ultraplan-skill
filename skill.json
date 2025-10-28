@@ -1,0 +1,33 @@
+{
+  "name": "ultraplan",
+  "version": "1.0.0",
+  "description": "Expert-level feature planning workflow with integrated research (Context7 + Perplexity)",
+  "author": "anombyte93",
+  "repository": "https://github.com/anombyte93/ultraplan-skill",
+  "main": "main.md",
+  "keywords": [
+    "planning",
+    "research",
+    "feature-design",
+    "documentation",
+    "context7",
+    "perplexity",
+    "rag"
+  ],
+  "requirements": {
+    "mcp_servers": {
+      "context7": {
+        "required": true,
+        "description": "Required for official documentation research"
+      },
+      "perplexity-free": {
+        "required": true,
+        "description": "Required for industry research and best practices"
+      }
+    }
+  },
+  "configuration": {
+    "default_plan_directory": ".taskmaster/docs/plans",
+    "enable_planning_mode": true
+  }
+}
